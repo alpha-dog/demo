@@ -71,3 +71,10 @@ hr.divider {
   color: white;
   text-align: center;
 }
+
+.fonta {
+ font-family: 'Rouge Script', cursive;
+  font-size: 5rem;
+  color: black;
+  text-align: center;
+}
