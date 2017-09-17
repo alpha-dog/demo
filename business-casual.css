@@ -65,19 +65,17 @@ hr.divider {
 .map-container iframe.clicked {
   pointer-events: auto;
 }
+
 .font {
- font-family: 'Rouge Script', cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 5rem;
   color: white;
   text-align: center;
 }
 
 .fonta {
- font-family: 'Rouge Script', cursive;
+  font-family: 'Rouge Script', cursive;
   font-size: 5rem;
   color: black;
   text-align: center;
-}
-.slideone{
-  float: none;
 }
