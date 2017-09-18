@@ -17,7 +17,15 @@ body {
 h1, h2, h3, h4, h5, h6, .text-heading {
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+#pizza{
+  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#subheading1 {
+font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#baskets{
+  text-align: center;
+}
 h1 {
   font-size: 4rem;
 }
@@ -83,8 +91,8 @@ hr.divider {
 .grid {
 display: grid;
 grid-template-columns:  30% 30% 30%;
-padding: 1em;
-background:rgba(232, 45, 45, 0.67);
+padding: auto;
+background:rgba(251, 145, 20, 0.67);
 }
 h2{
   text-align: center;
@@ -92,12 +100,4 @@ h2{
 
 ul{
   list-style: none;
-}
-#small{
-  text-align: center;
-padding-bottom: 0;
-
-}
-#large{
-  text-align: center;
 }
