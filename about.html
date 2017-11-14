@@ -22,15 +22,24 @@
   <link href="css/business-casual.css" rel="stylesheet">
 
   <script>
-    $('.horizontal .progress-fill span').each(function () {
-      var percent = $(this).html();
-      $(this).parent().css('width', percent);
-    });
+    $('.horizontal .progress-fill span').each(function(){
+  var percent = $(this).html();
+  $(this).parent().css('width', percent);
+});
+
+
+$('.vertical .progress-fill span').each(function(){
+  var percent = $(this).html();
+  var pTop = 100 - ( percent.slice(0, percent.length - 1) ) + "%";
+  $(this).parent().css({
+    'height' : percent,
+    'top' : pTop
+  });
+});
   </script>
 </head>
 
 <body>
-  Navigation
   <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Report Stuff</a>
@@ -61,8 +70,12 @@
  
   <!-- Welcome Message -->
 
-  <div class="container horizontal rounded">
-    <h2>Really Compelling Data</h2>
+  
+
+    <!-- Horizontal, rounded -->
+
+<div class="container horizontal rounded">
+    <h2>Production</h2>
     <div class="progress-bar horizontal">
       <div class="progress-track">
         <div class="progress-fill">
@@ -70,7 +83,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="progress-bar horizontal">
       <div class="progress-track">
         <div class="progress-fill">
@@ -78,7 +91,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="progress-bar horizontal">
       <div class="progress-track">
         <div class="progress-fill">
@@ -86,7 +99,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="progress-bar horizontal">
       <div class="progress-track">
         <div class="progress-fill">
@@ -94,7 +107,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="progress-bar horizontal">
       <div class="progress-track">
         <div class="progress-fill">
@@ -102,7 +115,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="progress-bar horizontal">
       <div class="progress-track">
         <div class="progress-fill">
@@ -111,8 +124,187 @@
       </div>
     </div>
   </div>
-
+  
+  <!-- Horizontal, flat -->
+  
+  <div class="container horizontal flat">
+    <h2>Sales</h2>
+    <div class="progress-bar horizontal">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>100%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar horizontal">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>75%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar horizontal">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>60%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar horizontal">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>20%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar horizontal">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>34%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar horizontal">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>82%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Vertical, rounded -->
+  
+  
+  <div class="container vertical rounded">
+    <h2>Compelling Data</h2>
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>100%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>75%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>60%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>20%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>34%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>82%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Vertical, flat -->
+  
+  
+  <div class="container vertical flat">
+    <h2>Whatever</h2>
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>100%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>75%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>60%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>20%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>34%</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill">
+          <span>82%</span>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- /.container -->
+
+  <script>
+      $('.horizontal .progress-fill span').each(function(){
+    var percent = $(this).html();
+    $(this).parent().css('width', percent);
+  });
+  
+  
+  $('.vertical .progress-fill span').each(function(){
+    var percent = $(this).html();
+    var pTop = 100 - ( percent.slice(0, percent.length - 1) ) + "%";
+    $(this).parent().css({
+      'height' : percent,
+      'top' : pTop
+    });
+  });
+  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
