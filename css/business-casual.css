@@ -83,15 +83,6 @@ h2 {
   color: #333;
 }
 
-.container {
-  width: 500px;
-  margin: 20px;
-  background: #fff;
-  padding: 20px;
-  overflow: hidden;
-  float: left;
-}
-
 .horizontal .progress-bar {
   float: left;
   height: 45px;
@@ -125,5 +116,5 @@ h2 {
 }
 
 img {
-  image-orientation: from-image;
+  image-orientation: flip;
 }
